@@ -1095,8 +1095,69 @@
   \badcode
   putenv "LD_LIBRARY_PATH=/sd0:1/lib"
   cd "/sd0:1"
-  rtpSp("<Qt 6_app>", 200, 0x100000, 0, 0x01000000)
+  rtpSp("<Qt 6 VxWorks application>", 200, 0x100000, 0, 0x01000000)
   \endcode
+
+  \section1 Debugging Qt Applications
+
+  To debug Qt Applications, you must add the following to your VxWorks VSB:
+  \badcode
+  vxprj vsb config -s -add "_WRS_CONFIG_TCF_GDB_RSP=y"
+  \endcode
+  To your VxWorks VIP configuration add:
+  \badcode
+  "INCLUDE_DEBUG_AGENT"
+  "INCLUDE_DEBUG_AGENT_START"
+  "INCLUDE_STANDALONE_SYM_TBL"
+  \endcode
+
+  \section2 From the Command Line
+
+  \list 1
+    \li Start the application to debug on the device through SSH or the USB serial connection:
+    \badcode
+    rtpSp("<Qt 6 VxWorks application>", 200, 0x100000, 0, 0x01000000)
+    \endcode
+    \li Start the VxWorks debugger on the PC:
+    \badcode
+    vxgdb <binary to debug>
+    \endcode
+    \li List the running processes in the debugger:
+    \badcode
+    monitor ps
+    \endcode
+    \li Attach the debugger to the already running application:
+    \badcode
+    "attach <id from monitor>"
+    \endcode
+    \li Use GDB commands for debugging.
+  \endlist
+
+  \section2 From Workbench
+
+  \list 1
+    \li Create a CMake Real Time Process project.
+    \image vxwb-cmake-rtp-project.png "Select cmake RTP project"
+    \li Set the VSB which has debugging configured.
+    \li Remove set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static") from CMakeLists.txt.
+    \li Add Qt CMake related code to the CMakeLists.txt following \l {https://doc.qt.io/qt-6/cmake-get-started.html#building-a-c-gui-applicationCMakeLists.txt} {Getting started with CMake}.
+    \li Before \c {project()} add \c {unset(CMAKE_TOOLCHAIN_FILE CACHE)} and add \c {CMAKE_TOOLCHAIN_FILE} pointing to the Qt6 toolchain file and \c {QT_CHAINLOAD_TOOLCHAIN_FILE} to the VSB toolchain file.
+    For example:
+    \badcode
+    unset(CMAKE_TOOLCHAIN_FILE CACHE)
+    set(CMAKE_TOOLCHAIN_FILE "/home/qtuser/VxWorks/qt/target_gdb/lib/cmake/Qt6/qt.toolchain.cmake")
+    set(QT_CHAINLOAD_TOOLCHAIN_FILE "/home/qtuser/VxWorks/fsl_imx6_2_0_6_2_VSB_gdb/mk/toolchain.cmake")
+    \endcode
+    \li Build the application Project.
+    \li Create a New Connection.
+    \image vxwb-connection.png "Connection to the device"
+    \li Start RTP process to debug.
+    \image vxwb-rundebug.png "Select Run/Debug Real Time Process"
+    \li Click on Advanced options.
+    \image vxwb-rundebug-settings.png "Run settings"
+    \li Set the stack size to 0x100000.
+    \image vxwb-advanced-settings.png "Advanced settings"
+  \endlist
 
   \section1 Limitations
 
