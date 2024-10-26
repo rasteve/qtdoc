@@ -71,13 +71,6 @@
         \li \l{QtModelIndex Android Class}
      \endlist
 
-    To use these classes, you must include the following in your \c build.gradle
-    file:
-
-    \badcode
-    packagingOptions.jniLibs.useLegacyPackaging true
-    \endcode
-
     \note See the \l{QT_ANDROID_GENERATE_JAVA_QTQUICKVIEW_CONTENTS} CMake
     variable for further information on Java code generation of QML components.
 
