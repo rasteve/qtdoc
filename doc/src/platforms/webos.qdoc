@@ -27,7 +27,7 @@ WebOS versions are released with modified Qt versions. The \b{meta-webosose} Yoc
 creates a customized Qt configuration to depend on.
 
 The Qt Company has verified that \b{webOS OSE version 2.26} works with applications
-developed with \qtver.
+developed with Qt \qtver.
 
 The supported target device is a Raspberry Pi 4, which is the main platform
 currently used by the community. Also QEMU emulator is supported.
