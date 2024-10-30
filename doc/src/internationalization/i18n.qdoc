@@ -382,6 +382,12 @@
     \c %1 refers to the first parameter and \c %2 refers to the second parameter,
     so this code produces output like: \e {File 2 of 3}.
 
+
+    Avoid using template strings with arguments because
+    the resulting string is defined at runtime, rather than compile-time.
+    As a result, the translation tools cannot find the correct translation
+    for the template strings.
+
     \section2 C++: Use QString::arg()
 
     In C++, use the QString::arg() functions to substitute parameters:
