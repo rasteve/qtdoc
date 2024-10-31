@@ -50,6 +50,7 @@ Item {
         anchors.fill: parent
         origin: originNode
         camera: camera
+        panEnabled: false
     }
 
     View3D {
