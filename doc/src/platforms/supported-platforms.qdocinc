@@ -67,11 +67,14 @@
 \section2 \l{Qt for macOS}{\macos}
 //! [macos]
 \table 80%
-    \header \li Target Platform \li Architecture \li Build Environment \li Notes
-    \row \li \macos 12, 13, 14, 15
-        \li \c x86_64, \c x86_64h, and \c arm64
-        \li Xcode 15 (\macos 14 SDK), Xcode 16 (\macos 15 SDK)
+    \header \li Build Environment \li Target Platform \li Architecture
+    \row
+        \li Xcode \macOSMinXcodeVersion (\macos \macOSMinSdkVersion SDK) or higher
+        \li \macos \macOSMinVersion or higher (including \macos \macOSMaxVersionTested)
+        \li \c x86_64, \c x86_64h, \c arm64
 \endtable
+
+\include apple-common.qdocinc {forward-compatibility} {\macos}
 //! [macos]
 
 \section2 \l{Qt for Windows}{Windows}
@@ -142,11 +145,14 @@ For more information on the supported Android versions, see
 \section2 \l{Qt for iOS}{iOS}
 //! [ios]
 \table 80%
-    \header \li Target Platform \li Architecture \li Build Environment
-    \row \li iOS 16, 17, 18
-        \li \c armv8 (\c arm64)
-        \li Xcode 15 (iOS 17 SDK), \li Xcode 16 (iOS 18 SDK)
+    \header \li Build Environment \li Target Platform \li Architecture
+    \row
+        \li Xcode \iOSMinXcodeVersion (iOS \iOSMinSdkVersion SDK) or higher
+        \li iOS \iOSMinVersion or higher (including iOS \iOSMaxVersionTested)
+        \li \c armv8, \c arm64
 \endtable
+
+\include apple-common.qdocinc {forward-compatibility} {iOS}
 //! [ios]
 
 For information about support of WebAssembly on mobile platforms, see notes
