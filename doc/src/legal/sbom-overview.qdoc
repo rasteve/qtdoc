@@ -38,7 +38,7 @@ ninja install
 cmake --install .
 \endcode
 
-In Qt 6.8, this build process creates SBOM documents in JSON and \c{tag:value}
+This build process creates SBOM documents in JSON and \c{tag:value}
 format as specified by the \l{SPDX Format}{SPDX} format.
 
 See \l{Building Qt Sources} and \l{Qt Configure Options} for more information
@@ -83,8 +83,8 @@ An SPDX package typically contains at least:
     \endcode
 
     An example identifier for a \l{Qt Network Authorization} package is:
-    \badcode
-    cpe:2.3:a:qt:qtnetworkauth:6.8.0:*:*:*:*:*:*:*
+    \badcode \QtVersion
+    cpe:2.3:a:qt:qtnetworkauth:\1:*:*:*:*:*:*:*
     \endcode
     For more information, see
     \l{https://cpe.mitre.org/specification/}{CPE Specification} page.
@@ -95,8 +95,8 @@ An SPDX package typically contains at least:
     \endcode
 
     An example PURL for a package is:
-    \badcode
-    pkg:generic/TheQtCompany/qtnetworkauth@6.8.0
+    \badcode \QtVersion
+    pkg:generic/TheQtCompany/qtnetworkauth@\1
     \endcode
     For more information,
     \l{https://github.com/package-url/purl-spec}{Package URL} page.
@@ -127,7 +127,7 @@ code
 
 The following is an example of an SBOM document for the
 \l{Qt Network Authorization} module. The SBOM filename is
-\c qtnetworkauth-6.8.0.spdx and is in the installation's \c sbom directory.
+\c qtnetworkauth-6.9.0.spdx and is in the installation's \c sbom directory.
 Note that the SBOM document contains several other packages not listed in the
 following example.
 
@@ -135,19 +135,19 @@ following example.
 SPDXVersion: SPDX-2.3
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
-DocumentName: qtnetworkauth-6.8.0
-DocumentNamespace: https://qt.io/spdxdocs/qtnetworkauth-6.8.0
+DocumentName: qtnetworkauth-6.9.0
+DocumentNamespace: https://qt.io/spdxdocs/qtnetworkauth-6.9.0
 Creator: Organization: TheQtCompany
 Creator: Tool: Qt Build System
 CreatorComment: <text>This SPDX document was created from CMake 3.27.7, using the qt
 build system from https://code.qt.io/cgit/qt/qtbase.git/tree/cmake/QtPublicSbomHelpers.cmake</text>
 Created: 2024-09-19T11:07:23Z
-ExternalDocumentRef: DocumentRef-qtbase https://qt.io/spdxdocs/qtbase-6.8.0 SHA1: 3dbc51259a07d458524a976da2e9607a76fab7e7
+ExternalDocumentRef: DocumentRef-qtbase https://qt.io/spdxdocs/qtbase-6.9.0 SHA1: 3dbc51259a07d458524a976da2e9607a76fab7e7
 
 PackageName: NetworkAuth
 SPDXID: SPDXRef-Package-qtnetworkauth-qt-module-NetworkAuth
 PackageDownloadLocation: git://code.qt.io/qt/qtnetworkauth.git
-PackageVersion: 6.8.0
+PackageVersion: 6.9.0
 PackageSupplier: Organization: TheQtCompany
 PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only
 PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only
@@ -156,8 +156,8 @@ ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtnetworkauth-Network
 FilesAnalyzed: true
 PackageCopyrightText: <text>Copyright (C) 2024 The Qt Company Ltd.</text>
 PrimaryPackagePurpose: LIBRARY
-ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtnetworkauth:6.8.0:*:*:*:*:*:*:*
-ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtnetworkauth:6.9.0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.9.0:*:*:*:*:*:*:*
 Relationship: SPDXRef-Package-qtnetworkauth-qt-module-NetworkAuth DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
 Relationship: SPDXRef-Package-qtnetworkauth-qt-module-NetworkAuth DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal
 Relationship: SPDXRef-Package-qtnetworkauth-qt-module-NetworkAuth DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui

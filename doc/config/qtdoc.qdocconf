@@ -69,6 +69,7 @@ macro.indextitle              = "\\title Qt $QT_VER"
 macro.qtver                   = "$QT_VER"
 macro.qtmajorversion          = "$QT_VER"
 macro.qtmajorversion.match    = "^(\\d+)"
+macro.QtVersionTag           = "$QT_VERSION_TAG"
 
 macro.qt5 = "\\l{https://doc.qt.io/qt-5/\1}{\2}"
 macro.qtbug = "\\l{https://bugreports.qt.io/browse/\1}{\1}"
