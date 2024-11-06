@@ -66,7 +66,7 @@
 
     That will configure a developer build for your host and only build the necessary
     dependencies used for the Android build. For more information on doing a full
-    and more customizable build for your host, see \ {Building Qt Sources}.
+    and more customizable build for your host, see \l{Building Qt Sources}.
 
     To configure Qt for Android, create a shadow build directory to keep the source
     directory clean:
@@ -81,7 +81,7 @@
     And then run the configure script:
 
     \badcode \NdkFullVer
-    ./configure -prefix <install_path> -qt-host-path <qt_host_install_path> \
+    ./configure -prefix <install_path> -qt-host-path <qt_host_path> \
         -android-abis <abi> -android-sdk ~/Android/Sdk -android-ndk ~/Android/Sdk/ndk/\1
     \endcode
 
