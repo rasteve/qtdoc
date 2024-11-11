@@ -1043,7 +1043,7 @@
         -submodules "qtbase,qtdeclarative,qtmultimedia,qtquick3d,qtgraphs,qtimageformats,qtsvg,qtshadertools,qtvirtualkeyboard" \
         -- \
         -B <target/build/directory> \
-        -DQT_VXWORKS_TOOLCHAIN_FILE=<path/to/BDP/toolchain.cmake> \
+        -DQT_VXWORKS_TOOLCHAIN_FILE=<path/to/VSB/mk/toolchain.cmake> \
         -DFEATURE_vulkan=OFF \
         -DQT_QMAKE_TARGET_MKSPEC=vxworks-clang \
         -DQT_HOST_PATH=<path/to/Qt6/host/installation/dir> \
