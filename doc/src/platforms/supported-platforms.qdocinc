@@ -242,7 +242,6 @@ combinations.
     \row \li Qualcomm \li Robotics RB5 Development Kit \li Yocto 5.0 \li \l{Boot to Qt} \li Qt Group
     \row \li ST \li STM32MP15 Evaluation \li Yocto 4.0 \li \l{Boot to Qt} \li Qt Group
     \row \li StarFive \li VisionFive 2 \li Yocto 5.0 \li \l{Boot to Qt} \li Qt Group
-    \row \li TI \li SK-AM69 \li Yocto 5.0 \li \l{Boot to Qt} \li Qt Group
     \row \li Toradex \li Apalis iMX8 \li Yocto 4.0 \li \l{Boot to Qt} \li Qt Group
     \row \li Toradex \li i.MX 95 Verdin Evaluation Kit** \li Yocto 5.0 \li \l{Boot to Qt} \li Qt Group
 \endtable
