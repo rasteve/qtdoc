@@ -56,7 +56,7 @@ The Emscripten versions are:
    \li 3.1.56
 \row
    \li Qt 6.9
-   \li 3.1.56
+   \li 3.1.70
 \endtable
 
 Refer to the \l{https://emscripten.org/docs/getting_started/index.html}
@@ -66,8 +66,8 @@ Emscripten SDK.
 Use \c emsdk to install specific \c Emscripten versions. For example, to install
 it for Qt 6.9 enter:
 \list
-    \li ./emsdk install 3.1.56
-    \li ./emsdk activate 3.1.56
+    \li ./emsdk install 3.1.70
+    \li ./emsdk activate 3.1.70
 \endlist
 
 After installation, you should have the Emscripten compiler in your path.
