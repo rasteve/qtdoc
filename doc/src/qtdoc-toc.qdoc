@@ -50,8 +50,8 @@
             \li \l {Qt for \macos}
                 \list
                     \li \l {Qt for \macos - Building from Source}{Building from source}
-                    \li \l {Qt for \macos - Specific Issues}{Specific issues}
                     \li \l {Qt for \macos - Deployment}{Deployment}
+                    \li \l {Qt for \macos - Specific Issues}{Specific issues}
                 \endlist
             \li \l {Qt for Android}
                 \list
