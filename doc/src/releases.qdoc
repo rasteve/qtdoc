@@ -106,8 +106,10 @@
     The Qt Company provides \l{https://www.qt.io/qt-support/}{commercial support} for Qt.
     Under \l{https://www.qt.io/terms-conditions/#appendix-9}{standard support conditions}, each
     minor version of Qt is supported for one year, starting from the date of the minor release.
-    For Qt LTS versions the support is extended to three years, starting from the original
-    minor release (Qt x.y.0 release). Even longer support can be negotiated individually.
+    For Qt LTS versions before 6.8.0, the support is extended to three years,
+    starting from the original minor release (Qt x.y.0 release). Starting with
+    version 6.8.0, the LTS versions are supported for five years. Even longer
+    support can be negotiated individually.
 
     \target Supported Qt Versions
     \section1 Supported versions
