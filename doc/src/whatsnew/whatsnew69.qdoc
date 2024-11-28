@@ -38,6 +38,10 @@
     \list
     \endlist
 
+    \section2 Qt HttpServer Module
+    \list
+    \endlist
+
     \section2 Qt Multimedia Module
     \list
     \endlist
@@ -47,6 +51,10 @@
     \endlist
 
     \section2 Qt Network Auth Module
+    \list
+    \endlist
+
+    \section2 Qt OPCUA Module
     \list
     \endlist
 
@@ -74,11 +82,19 @@
     \list
     \endlist
 
+    \section2 Qt Quick Dialogs
+    \list
+    \endlist
+
     \section2 Qt Quick Shapes Module
     \list
     \endlist
 
     \section2 Qt Quick 3D Module
+    \list
+    \endlist
+
+    \section2 Qt Quick 3D XR Module
     \list
     \endlist
 
@@ -94,7 +110,15 @@
     \list
     \endlist
 
+    \section2 Qt SVG Module
+    \list
+    \endlist
+
     \section2 Qt Test Module
+    \list
+    \endlist
+
+    \section2 Qt VirtualKeyboard Module
     \list
     \endlist
 
@@ -102,9 +126,23 @@
     \list
     \endlist
 
+    \section1 Tools
+
+    \section2 QDoc Documentation Generator
+    \list
+    \endlist
+
     \section1 Platform Changes
 
     \section2 Desktop Platforms
+
+    \section3 macOS
+    \list
+    \endlist
+
+    \section3 WebAssembly
+    \list
+    \endlist
 
     \section3 Windows
     \list
@@ -120,11 +158,23 @@
     \list
     \endlist
 
+    \section3 iOS
+    \list
+    \endlist
+
     \section3 visionOS
     \list
     \endlist
 
     \section2 Embedded Platforms
+
+    \section3 Boot to Qt
+    \list
+    \endlist
+
+    \section3 RealTime OSs
+    \list
+    \endlist
 
     \section1 List of API Changes
 
