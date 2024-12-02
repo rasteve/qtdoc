@@ -731,7 +731,7 @@
     shows how this is done on Windows:
 
     \badcode \QtVersion
-    cmake -DCMAKE_PREFIX_PATH=C:\Qt\\1\msvc2019_64 -S <source-dir> -B <build-dir>
+    cmake -DCMAKE_PREFIX_PATH=C:\Qt\\1\msvc2022_64 -S <source-dir> -B <build-dir>
     \endcode
 
     The \c{<source-dir>} and \c{<build-dir>} placeholders represent the source
@@ -765,7 +765,7 @@
     you can use it just like you would use \c{cmake}:
 
     \badcode \QtVersion
-    C:\Qt\\1\msvc2019_64\bin\qt-cmake -G Ninja -S <source-dir> -B <build-dir>
+    C:\Qt\\1\msvc2022_64\bin\qt-cmake -G Ninja -S <source-dir> -B <build-dir>
     \endcode
 
     After the build system files are generated, your project is ready to be
