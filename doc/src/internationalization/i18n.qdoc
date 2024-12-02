@@ -664,6 +664,12 @@
     Metadata appearing right in front of the TRANSLATOR keyword applies to
     the whole TS file.
 
+    \note When the TS file is opened in \QL, the comments
+    annotated by \c {//:} are presented in the message editor of \QL.
+    Whereas, the texts provided using the \c{//~} notations
+    are extra information and are generated in the TS file only. They are mainly
+    intended for conversions to other formats and are hidden in \QL.
+
     \section1 Disambiguate Identical Text
 
     The translation system consolidates the UI text strings into unique items to
