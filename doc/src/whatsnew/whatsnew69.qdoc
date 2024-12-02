@@ -24,10 +24,50 @@
 
     \section2 Qt Core Module
     \list
+        \li QJniArray can now create an empty array of a fixed size, and change
+            values in an array using a non-const iterator or \l{QJniArray::}{operator[]}
+        \li QLocale::uiLanguages() now includes fall-back entries obtained by
+            removing later components of names. Callers that have been doing
+            such truncations for themselves are now encouraged to trust that
+            QLocale knows the right things to try and the right order to try
+            them in.
+        \li QLocale::bcp47Name() now represents the C locale as "en-POSIX", to
+            distinguish it from plain "en" and better align with the BCP47 spec.
+            The variant POSIX is likewise now recognized as meaning the C
+            locale, when constructing one from its name.
+        \li QTimeZone::abbreviation() on Windows now returns an abbreviation
+            rather than the full name.
+        \li QTimeZone::displayName() should now actually provide
+            locale-appropriate names for zones on all platforms, where
+            previously some failed to support this.
+        \li Converting timestamp strings with a timezone part to QDateTime
+            now recognizes long-form display names of zones.
     \endlist
 
     \section2 Qt Graphs Module
     \list
+        \li Added transparency support to Surface3D, utilizing order-independent transparency
+            from QtQuick3D. Only approximate technique (WeightedBlended) has been implemented
+            to QtQuick3D this far, so no accurate techniques can be used yet.
+        \li Added \c rootNode property to allow injecting graphs to a View3D in QtQuick3D
+            applications.
+        \li Added another picking method, \c {doRayPicking}, to be used with View3D graph
+            injections.
+        \li Added \c QSpline3DSeries class to allow users render their data in splines.
+        \li Added \c valueColoringEnabled property to Bars3D, which allows each bar to be
+            colored separately based on its value.
+        \li Added \c scaleLabelsByCount property to QAbstract3DAxis, allowing users to define
+            whether axis labels should be scaled based on the total amount of labels.
+        \li Added \c labelSize property to QAbstract3DAxis, allowing users to set the sizes
+            of axis labels by each axis.
+        \li Added support for setting the minimum and maximum rotations in X and Y directions
+            to Bars3D, Scatter3D, and Surface3D.
+        \li Added \c alignment property to QAbstractAxis, allowing users to align axes left,
+            right, top, or bottom.
+        \li Added \c plotArea property to QGraphsView, allowing users to define the rectangle a
+            graph will be drawn in.
+        \li Added zooming and panning support to QGraphsView.
+        \li Added custom input handling support to area, line, pie, and scatter graphs.
     \endlist
 
     \section2 Qt GRPC Module
@@ -36,6 +76,13 @@
 
     \section2 Qt GUI Module
     \list
+        \li QBrush and QPen got optimized operators for comparing with or
+            assigning from color and style values.
+        \li QPainter::setBrush() got new optimized overloads for setting a color
+            as a solid brush.
+        \li QPainterStateGuard is a new RAII class to ensure balanced
+            save/restore operations on a QPainter.
+        \li Added QWindow::safeAreaMargins() to reflect the safe area of the window.
     \endlist
 
     \section2 Qt HttpServer Module
@@ -76,6 +123,7 @@
 
     \section2 Qt Quick Module
     \list
+        \li Added SafeArea attched property to manage safe areas of an Item or Window.
     \endlist
 
     \section2 Qt Quick Controls Module
@@ -88,6 +136,13 @@
 
     \section2 Qt Quick Shapes Module
     \list
+    \endlist
+
+    \section2 Qt Quick Effects Module
+    \list
+        \li New RectangularShadow element for fast rounded rectangle shaped
+            shadow/glow. The API is similar to CSS box-shadow, with color,
+            offset, spread and blur values.
     \endlist
 
     \section2 Qt Quick 3D Module
@@ -120,6 +175,8 @@
 
     \section2 Qt VirtualKeyboard Module
     \list
+        \li Added a new Japanese layout which uses flick keys.
+        \li Added support for adjusting key sound volume.
     \endlist
 
     \section2 Qt WebEngine Module
@@ -133,6 +190,13 @@
     \endlist
 
     \section1 Platform Changes
+
+    \section2 Build System Changes
+
+    \list
+        \li Building Qt and using Qt in CMake projects now requires CMake version 3.22 or
+            later.
+    \endlist
 
     \section2 Desktop Platforms
 
@@ -156,6 +220,24 @@
 
     \section3 Android
     \list
+        \li Support uncompressed native libs within APKs and removing the need
+            for \c {packagingOptions.jniLibs.useLegacyPackaging true}.
+        \li Introduce \l {qt_add_android_permission()} CMake function.
+        \li Add \l QT_ANDROID_COMPILE_SDK_VERSION CMake property to set the SDK
+            level for building Java code.
+        \li Add \l QT_ANDROID_APP_ICON CMake property to set an app's icon.
+        \li Add \l QT_ANDROID_APP_NAME CMake property to set an app's name.
+        \li Decouple location and bluetooth permissions for API level 31+.
+        \li Allow setting a maximum for queued background UI events.
+        \li Add script to easily deploy, run apps and get logs from terminal.
+        \li QML for Android and QtQuickView:
+        \list
+            \li Add setData() and dataChanged() methods to QtAbstractItemModel.
+            \li Add OnDataChangedListerner callback interface.
+            \li QtQuickViewContent: Add onStatusChanged() overload that passes
+                the underlying QtQuickViewContent object.
+            \li Support multiple embedded views from an Android Service.
+        \endlist
     \endlist
 
     \section3 iOS
