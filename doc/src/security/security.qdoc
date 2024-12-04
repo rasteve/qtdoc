@@ -38,8 +38,8 @@
 
     \section1 Reporting Security Issues
 
-    To report security issues, send an email to Security Mail List at
-    \l{mailto:security@qt-project.org}.
+    To report security issues in \l{https://www.qt.io/product}{Qt Products},
+    send an email to Security Mail List at \l{mailto:security@qt-project.org}.
     The Core Security Team monitors and moderates incoming emails on business
     days (excluding weekends).
     After sending an email to the Security Mail List, there will be an
@@ -48,10 +48,18 @@
     contact the
     \l{https://wiki.qt.io/Maintainers}{Chief Maintainer} directly.
 
+    To report issues regarding The Qt Company services such as the website or
+    Qt Account, email \l{mailto:security@qt.io}.
+
+    \section2 Qt Group Commercial security agreement
+
     For commercial licensees, use the \e{Security Issues} category in the
     support portal to report issues to the Qt Company Support team. The
     reporter will be sent an acknowledgment when the issue is forwarded to the
     Security Mail List.
+
+    Visit the
+    \l{https://www.qt.io/terms-conditions/responsible-vulnerability-disclosure-process}{Responsible Vulnerability Disclosure Agreement} page for more information.
 
     \section1 Software Bill of Materials (SBOM)
 
