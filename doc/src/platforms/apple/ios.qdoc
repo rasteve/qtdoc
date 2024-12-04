@@ -660,9 +660,18 @@
 
     \section2 Native Image Picker
 
-    If your \c Info.plist file contains an entry for \c NSPhotoLibraryUsageDescription, qmake will
-    automatically include an extra plugin which enables access to the native image picker. If the directory
-    in your QFileDialog is set to:
+    If your \c Info.plist file contains an entry for
+    \c NSPhotoLibraryUsageDescription, qmake will automatically include an extra
+    plugin which enables access to the native image picker.
+
+    For CMake, manually link the native image picker with the
+    \l {qt_import_plugins}:
+
+    \badcode
+    qt_import_plugins(app INCLUDE Qt6::QIosOptionalPlugin_NSPhotoLibraryPlugin)
+    \endcode
+
+    If the directory in your \l QFileDialog is set to:
 
     \badcode
     QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).last();
