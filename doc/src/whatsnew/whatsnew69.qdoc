@@ -204,6 +204,12 @@
     \list
     \endlist
 
+    \section2 Qt Widgets Module
+    \list
+        \li QComboBox can draw its label using the item view's delegate by setting
+            the \l{QComboBox::}{labelDrawingMode} property to \l{QComboBox::}{UseDelegate}.
+    \endlist
+
     \section1 Tools
 
     \section2 QDoc Documentation Generator
