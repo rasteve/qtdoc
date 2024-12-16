@@ -123,6 +123,13 @@
 
     \section2 Qt QML Module
     \list
+        \li QML Language Server now provides an outline view of the document
+            structure. This allows clients (e.g., IDEs or code editors) to represent
+            a qml document’s structure as an interactive outline, displaying objects,
+            properties, methods and other code elements in a hierarchical view.
+        \li Added the maximum line length feature to qmlformat: qmlformat now controls
+            where to break lines based on a maximum allowed line length, ensuring a consistent
+            and readable QML document.
     \endlist
     \section3 Qt Quick Compiler
     \list
