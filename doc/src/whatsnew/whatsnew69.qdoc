@@ -214,6 +214,11 @@
 
     \section3 Wayland Client on Linux
     \list
+        \li Added support for the new \c{xdg-toplevel-icon-v1} protocol to make
+            \c{QWindow::setIcon} work if the compositor supports this protocol
+            as well.
+        \li The underlying \c{wl_surface} of a window now shares its lifetime
+            and is no longer destroyed when the window is hidden.
     \endlist
 
     \section2 Mobile Platforms
