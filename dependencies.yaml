@@ -17,6 +17,12 @@ dependencies:
   ../qtpositioning:
     ref: ce07b92619c9d6e5bd0e5cefbde4de9fe1a0cd2a
     required: false
+  ../qtquick3dphysics:
+    ref: d50e2ea7604de0cb9929843d94cceeeeee030714
+    required: false
+  ../qtsensors:
+    ref: 985342ba6d78eaa63aa88191e11fa557682b763b
+    required: false
   ../qtshadertools:
     ref: 28958b762e77fe26576771e6c39b73b904b8e300
     required: false
