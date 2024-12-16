@@ -83,6 +83,14 @@
         \li QPainterStateGuard is a new RAII class to ensure balanced
             save/restore operations on a QPainter.
         \li Added QWindow::safeAreaMargins() to reflect the safe area of the window.
+        \li Added parsing and automatic detection of emoji sequences in text, ensuring the use of
+            color fonts when needed as according to the Unicode specification. This parser can
+            be disabled per layout using QTextOption::DisableEmojiParsing, or by disabling the
+            emoji segmenter when configuring Qt.
+        \li Added QFontDatabase::addApplicationEmojiFontFamily() and related functions for
+            customizing the default emoji font used by the application.
+        \li Added QFontInfo::variableAxes() for retrieving information about the variable axes
+            supported by a font.
     \endlist
 
     \section2 Qt HttpServer Module
@@ -124,6 +132,12 @@
     \section2 Qt Quick Module
     \list
         \li Added SafeArea attched property to manage safe areas of an Item or Window.
+        \li Added Shear component for a convenient way of applying shearing transforms to
+            items.
+        \li Added FontMetrics.capitalHeight property which was previously missing from the Qt Quick
+            API.
+        \li Added FontInfo type for retrieving the results of font resolution, matching the
+            QFontInfo class in C++.
     \endlist
 
     \section2 Qt Quick Controls Module
