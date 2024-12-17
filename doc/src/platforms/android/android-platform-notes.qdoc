@@ -50,11 +50,6 @@
     This environment variable is queried each time the keyboard is displayed,
     so it's possible to toggle the workaround on and off, as necessary.
 
-    \section2 Display Cutout Modes
-
-    Android LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES is not supported. For more
-    information, see \l{QTBUG-114437}.
-
     \section2 Text Glyph Caching
 
     Because of a bug in some OpenGL drivers, the mechanism used by Qt to cache
