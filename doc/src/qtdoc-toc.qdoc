@@ -160,6 +160,16 @@
                     \li \l {Deploying Plugins}
                     \li \l {Using qt.conf}
                 \endlist
+            \li \l {Best Practice Guides}
+                \list
+                    \li \l {How to Create Qt Plugins}
+                    \li \l {Creating Shared Libraries}
+                    \li \l {Exception Safety}
+                    \li \l {Session Management}
+                    \li \l {Calling Qt Functions From Unix Signal Handlers}
+                    \li \l {Setting the Application Icon}
+                    \li \l {Restoring a Window's Geometry}
+                \endlist
             \li \l {Porting to Qt 6}{Porting Qt 5 to Qt 6}
                 \list
                     \li \l {Changes to Qt Modules in Qt 6}
@@ -192,6 +202,7 @@
             \li \l {QML Performance Considerations And Suggestions}
             \li \l {Glossary Of QML Terms}
             \li \l {Prototyping with the QML Runtime Tool}
+            \li \l {Scalability}
             \li \l {Use case - Animations In QML}{Animations in QML}
             \li \l {Use Case - Integrating JavaScript in QML}{Integrating JavaScript in QML}
             \li \l {Use Case - Positioners and Layouts In QML}{Positioners and layouts in QML}
