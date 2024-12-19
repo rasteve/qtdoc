@@ -185,6 +185,12 @@
 
     \section2 Qt Sql Module
     \list
+        \li QSqlDriver gained a new function \l{QSqlDriver::}{connectionName()}
+            which returns the connection name of the associated QSqlDatabase
+            instance.
+        \li QSqlQueryModel can now refresh the database with
+            \l{QSqlQueryModel::}{refresh()} when e.g. the database was modified
+            from outside of Qt so it needs to be re-read.
     \endlist
 
     \section2 Qt SVG Module
@@ -207,8 +213,16 @@
 
     \section2 Qt Widgets Module
     \list
+        \li QAbstractItemView got a new property \l{QAbstractItemView::}{updateThreshold}
+            to specify when a full view update should be done instead trying to figure
+            out the parts where something changed within dataChanged(). This is
+            especially useful when a lot of items change in a large model as the update
+            rect calculation might take longer than a full view update.
         \li QComboBox can draw its label using the item view's delegate by setting
             the \l{QComboBox::}{labelDrawingMode} property to \l{QComboBox::}{UseDelegate}.
+        \li QHeaderView has been optimized to dramatically reduce memory usage
+            for huge models as long as the sections are not resized, hidden or
+            reordered.
     \endlist
 
     \section1 Tools
