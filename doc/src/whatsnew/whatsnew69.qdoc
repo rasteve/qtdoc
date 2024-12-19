@@ -42,6 +42,7 @@
             previously some failed to support this.
         \li Converting timestamp strings with a timezone part to QDateTime
             now recognizes long-form display names of zones.
+        \li QMetaEnum and QFlags can now support types requiring up to 64-bits.
     \endlist
 
     \section2 Qt Graphs Module
