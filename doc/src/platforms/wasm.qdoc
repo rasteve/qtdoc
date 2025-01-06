@@ -203,6 +203,19 @@ The qtwasmserver script starts one server which binds to localhost by default. Y
 add additional addresses using the \e -a command-line argument, or use \e --all to bind
 to all available addresses.
 
+The qtwasmserver script lives in the sources at
+\code
+    qtbase/util/wasm/qtwasmserver/qtwasmserver.py
+\endcode
+
+or can be installed using pip:
+\code
+    pip install qtwasmserver
+\endcode
+
+For more information on qtwasmserver \l{https://pypi.org/project/qtwasmserver/}{qtwasmserver}
+
+Using qtwasmserver:
 \badcode
     python /path/to/qtbase/util/wasm/qtwasmserver/qtwasmserver.py --all
 \endcode
