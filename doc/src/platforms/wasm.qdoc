@@ -459,14 +459,14 @@ WebGL closely conforms to OpenGL ES, with the following version mapping:
         \li OpenGL
         \li WebGL
     \row
-        \li OpengL ES 2
+        \li OpengL ES 2.0
         \li WebGL 1
     \row
-        \li OpengL ES 3
+        \li OpengL ES 3.0
         \li WebGL 2
 \endtable
 
-Qt useses the highest available WebGL version. This is typically WebGL 2 on
+Qt uses the highest available WebGL version. This is typically WebGL 2 on
 today's browsers, but might be WebGL 1 if limited by hardware. We recommend
 targeting devices which support WebGL 2 with Qt for WebAssembly.
 
@@ -492,6 +492,9 @@ and/or full ES3 emulation by adding
 \endcode
 
 to your project's \c {CMakeLists.txt}.
+
+For more information regarding Emscripten's OpenGL support visit
+\l{https://emscripten.org/docs/porting/multimedia_and_graphics/OpenGL-support.html}
 
 \section3 Sharing OpenGL contexts
 
