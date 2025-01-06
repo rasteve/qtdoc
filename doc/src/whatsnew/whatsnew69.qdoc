@@ -139,7 +139,7 @@
 
     \section2 Qt Quick Module
     \list
-        \li Added SafeArea attched property to manage safe areas of an Item or Window.
+        \li Added SafeArea attached property to manage safe areas of an Item or Window.
         \li Added Shear component for a convenient way of applying shearing transforms to
             items.
         \li Added FontMetrics.capitalHeight property which was previously missing from the Qt Quick
@@ -267,7 +267,7 @@
 
     \section3 Android
     \list
-        \li Support uncompressed native libs within APKs and removing the need
+        \li Support uncompressed native libs within APKs and remove the need
             for \c {packagingOptions.jniLibs.useLegacyPackaging true}.
         \li Introduce \l {qt_add_android_permission()} CMake function.
         \li Add \l QT_ANDROID_COMPILE_SDK_VERSION CMake property to set the SDK
