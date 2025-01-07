@@ -467,17 +467,17 @@
     are required:
 
     \list
-        \li AppIcon60x60@2x.png: 120 x 120 (for iPhone)
-        \li AppIcon76x76@2x~ipad.png: 152 x 152 (for iPad)
-        \li AppIcon167x167.png: 167x167 (for iPad Pro)
-        \li AppIcon1024x1024.png: 1024 x 1024 (for App Store)
+        \li \c {AppIcon60x60@2x.png}: 120 x 120 (for iPhone)
+        \li \c {AppIcon76x76@2x~ipad.png}: 152 x 152 (for iPad)
+        \li \c {AppIcon167x167.png}: 167x167 (for iPad Pro)
+        \li \c {AppIcon1024x1024.png}: 1024 x 1024 (for App Store)
     \endlist
 
     Ad-hoc distributions should also include the following filenames in the application bundle
     to visualize the application in iTunes:
     \list
-        \li iTunesArtwork 512x512
-        \li iTunesArtwork@2x 1024x1024
+        \li \c iTunesArtwork 512x512
+        \li \c iTunesArtwork@2x 1024x1024
     \endlist
 
     The easiest way to add the icons is to follow Xcode's documentation at
