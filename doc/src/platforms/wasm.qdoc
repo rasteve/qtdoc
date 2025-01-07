@@ -623,8 +623,11 @@ Emscripten provides several file systems with a POSIX like API. These include:
 \endlist
 
 Emscripten mounts a temporary MEMFS filesystem to "/" at app startup. This means
-that QFile can be used, and will read and write files to memory by default. Qt
-provides other API as well:
+that QFile can be used, and will read and write files to memory by default. It is
+not preserved over a browser reload.
+
+Since web pages do not have direct access to the local filesystem, Qt provides
+a QFileDialog API for use with Qt for WebAssembly.
 
 \list
 \li \l {https://doc.qt.io/qt-5/qfiledialog.html#getOpenFileContent}{QFileDialog::getOpenFileContent() }
