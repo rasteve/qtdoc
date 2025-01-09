@@ -92,6 +92,23 @@
             customizing the default emoji font used by the application.
         \li Added QFontInfo::variableAxes() for retrieving information about the variable axes
             supported by a font.
+        \li QRhi: when running with OpenGL ES on mobile GPUs with support present,
+            GL_EXT_multisampled_render_to_texture is utilized whenever possible. For
+            clients such as Qt Quick and Qt Quick 3D this potentially brings significant
+            performance improvements in multisampled rendering on tiled GPU architectures.
+        \li QRhi: On Windows with Direct 3D 11 and 12, QWindow update requests are now driven
+            by a dedicated vblank watcher thread, reducing CPU load and latency. This
+            means that clients such as Qt Quick are expected to have a reduced lag when
+            interactively dragging items by mouse or touch for example.
+        \li QRhi: Added support for variable rate shading, where applicable (Direct 3D 12, Vulkan,
+            Metal). This enables dynamic foveation support with Qt Quick 3D XR on visionOS.
+        \li QRhi: Per-render target blending is now optionally supported for OpenGL as well.
+        \li QRhi: Added support for a number of integer and depth texture formats.
+        \li QRhi: Added support for passing in application-provided wait/signal semaphores
+            when on Vulkan. These are then passed on to to vkQueueSubmit and Present, thus
+            allowing integration of external rendering/compute engines that rely on
+            multiple threads and require appropriate synchronization with the scenegraph
+            renderer.
     \endlist
 
     \section2 Qt HttpServer Module
@@ -146,6 +163,13 @@
             API.
         \li Added FontInfo type for retrieving the results of font resolution, matching the
             QFontInfo class in C++.
+        \li Reintroduced support for the FramebufferObject rendering mode of QQuickPaintedItem when
+            the graphics API in use is OpenGL. This is provided as a porting aid for Qt 5 era
+            applications that require the use of QPainter's legacy OpenGL paint engine for their
+            QQuickPaintedItems.
+        \li Optimized the scenegraph renderer's buffer pooling logic to prevent spikes in memory
+            usage in scenes with large geometries. Additionally, there is a reduction in overhead
+            for scenes with a lot of items, in particular when running with OpenGL.
     \endlist
 
     \section2 Qt Quick Controls Module
