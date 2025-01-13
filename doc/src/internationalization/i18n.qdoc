@@ -540,7 +540,7 @@
 
     \section1 Mark Translatable Data Text Strings
 
-    Use \c _NoOp functions (in QML) and \c _NOOP macros (in C++) to mark
+    Use \c _NOOP functions (in QML) and \c _NOOP macros (in C++) to mark
     translatable string literals for extraction by the \c lupdate tool.
 
     \section2 QML: Use _NOOP Functions
