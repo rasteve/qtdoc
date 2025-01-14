@@ -253,6 +253,35 @@
 
     \section2 QDoc Documentation Generator
     \list
+        \li QDoc now accepts formatting commands in macro arguments.
+        \li Authors can now override the underlying return type of a function
+            that's documented with an \l {fn-command} {fn}-command with \c auto.
+        \li QDoc can now generate documentation from comments in C++ headers.
+            This is added as a technical preview in QDoc with Qt 6.9, and we'd
+            love to get feedback from our users. Enable the
+            \l {documentationinheaders-variable} {documentationinheaders}
+            QDoc configuration variable to try it out.
+        \li QML enumeration documentation can be generated from C++ enumerations
+            with the new \l {qmlenumeratorsfrom-command} {qmlenumeratorsfrom}
+            command.
+        \li The \l {generatelist-command} {generatelist} and
+            \l {annotatedlist-command} {annotatedlist} commands now support
+            custom sort order for the generated lists.
+        \li \l {deprecated-command} {deprecated} accepts future versions, and
+            QDoc generates appropriate text when it recognizes a version as
+            being in the future.
+        \li Clang library requirements: QDoc requires Clang libraries from
+            LLVM 17. It's also confirmed to work with Clang libraries from
+            LLVM 18, 19, and 20.
+        \li QDoc now supports adjusting the CMake requisites for third-party
+            projects with the \l {cmakecomponent-command} {cmakecomponent},
+            \l {cmakepackage-command} {cmakepackage}, and
+            \l {cmaketargetitem} {cmaketargetitem} commands.
+        \li Example-related warnings are now configurable through the new
+            \l {examples.warnaboutmissingimages-variable} {examples.warnaboutmissingimages}
+            and
+            \l {examples.warnaboutmissingprojectfiles-variable} {examples.warnaboutmissingprojectfiles}
+            configuration variables.
     \endlist
 
     \section1 Platform Changes
