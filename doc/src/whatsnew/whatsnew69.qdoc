@@ -196,10 +196,37 @@
 
     \section2 Qt Quick 3D Module
     \list
+        \li Added WeightedBlended Order Independent Transparency (OIT) implementation for rendering
+            transparent objects.
+        \li Added support for 32-bit unsigned integer texture formats.
+        \li Improved control over shadow map bounds for instancing models, potentially
+            allowing for better performance when calculating becomes expensive.
+        \li Added support for 4K shadow maps with a new 'Ultra' resolution setting.
+        \li Added the option of forcing medium precision for
+            floats in GLSL ES fragment shaders. Provided mainly as a tool
+            for performance tuning. Set the environment variable
+            QT_QUICK3D_MEDIUM_PRECISION to a non-zero value. Has no effect
+            on other kinds of shaders (and that includes non-ES GLSL too).
+        \li DebugView now supports visualizing bounds for point light shadows.
+        \li Ported the built-in geometries from Qt 3D to QtQuick3D.Helpers.
+            PlaneGeometry, SphereGeometry, CylinderGeometry, ConeGeometry,
+            and TorusGeometry are now available in QtQuick3D.Helpers.
+        \li Added a port of the ExtrudedTextMesh from Qt 3D to QtQuick3D.Helpers.
+        \li Added support for using instancing with custom materials in the material editor.
     \endlist
 
     \section2 Qt Quick 3D XR Module
     \list
+        \li Added support for haptic output with controllers using amplitude, duration,
+            and frequency through a new XrHapticFeedback item.
+        \li Added new property in XrInputAction to conditionally disable an action without
+            having to test for it in all the handler functions.
+        \li Added Metal backend for OpenXR to support running in Meta XR Simulator on macOS.
+        \li The property multiViewRenderingEnabled is now read-only and toggling multiview
+            rendering is no longer possible at run-time. If multiview rendering is supported,
+            it is enabled for the lifetime of the application. In porting situations, where
+            multiview rendering is not desired, it can be disabled by setting the environment
+            variable QT_QUICK3D_XR_DISABLE_MULTIVIEW to a non-zero value.
     \endlist
 
     \section2 Qt Quick VectorImage Module
