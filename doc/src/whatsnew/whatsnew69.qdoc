@@ -43,6 +43,11 @@
         \li Converting timestamp strings with a timezone part to QDateTime
             now recognizes long-form display names of zones.
         \li QMetaEnum and QFlags can now support types requiring up to 64-bits.
+        \li QJsonValue can now parse and serialize JSON using
+            \l{QJsonValue::}{fromJson} and \l{QJsonValue::}{toJson} directly,
+            without going through QJsonDocument. This allows it to parse and
+            serialize primitive values like strings or numbers as well as
+            compound values.
     \endlist
 
     \section2 Qt Graphs Module
