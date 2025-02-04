@@ -275,19 +275,34 @@ documentation.
     \li \l{Qt for INTEGRITY}
     \row \li QNX 7.1
     \li
+        \list
+            \li \c ARMle-v7
+            \li \c AArch64le and x86-64 (64-bit)
+        \endlist
+    \li QCC from QNX7.1 SDP (based on GCC8.3)
+    \li \l{Qt for QNX}
+    \row \li QNX 8.0
     \li
+        \list
+            \li \c AArch64le and x86-64 (64-bit)
+        \endlist
+    \li QCC from QNX8.0 SDP (based on GCC12.2)
     \li \l{Qt for QNX}
     \row \li Free RTOS
-    \li
-    \li
+    \li Platform specific. For details, see \l {Supported Qt for MCUs platforms}.
+    \li Platform specific. For details, see \l {Supported Qt for MCUs platforms}.
     \li \l{Qt for MCUs}
-    \row \li VxWorks
-    \li \c armv7 (i.mx6), \c x86_64 (Intel SkyLake)
+    \row \li VxWorks 24.03
     \li
+        \list
+            \li \c armv7 (i.mx6)
+            \li \c x86_64 (Intel SkyLake)
+        \endlist
+    \li Clang version 17.0.6.1
     \li \l{Qt for VxWorks}
-    \row \li Bare metal
-    \li
-    \li
+    \row \li Zephyr
+    \li Platform specific. For details, see \l {Supported Qt for MCUs platforms}.
+    \li Platform specific. For details, see \l {Supported Qt for MCUs platforms}.
     \li \l{Qt for MCUs}
 \endtable
 
