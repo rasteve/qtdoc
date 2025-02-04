@@ -317,6 +317,9 @@
             and
             \l {examples.warnaboutmissingprojectfiles-variable} {examples.warnaboutmissingprojectfiles}
             configuration variables.
+        \li QDoc can now generate tooltips for images in your documentation.
+            The documentation for the new \l {usealttextastitle-variable} {usealttextastitle}
+            configuration variable describes how to enable this for your project.
     \endlist
 
     \section1 Platform Changes
