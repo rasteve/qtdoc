@@ -57,21 +57,21 @@
         \endlist
         \li \l{CMake Command Reference}
         \list
-            \li \l{cmake-commands-qtcore}{Qt6::Core}
-            \li \l{cmake-commands-qtdbus}{Qt6::DBus}
-            \li \l{cmake-commands-qtgrpc}{Qt6::Grpc}
-            \li \l{cmake-commands-qtinterfaceframework}{Qt6::InterfaceFramework}
-            \li \l{cmake-commands-qtlinguisttools}{Qt6::LinguistTools}
-            \li \l{cmake-commands-qtmultimedia}{Qt6::Multimedia}
-            \li \l{cmake-commands-qtprotobuf}{Qt6::Protobuf}
-            \li \l{cmake-commands-qtqml}{Qt6::Qml}
-            \li \l{cmake-macros-qtremoteobjects}{Qt6::RemoteObjects}
-            \li \l{cmake-macros-qtscxml}{Qt6::Scxml}
-            \li \l{cmake-commands-qtshadertools}{Qt6::ShaderTools}
-            \li \l{cmake-commands-qtwaylandclient}{Qt6::WaylandClient}
-            \li \l{cmake-commands-qtwaylandcompositor}{Qt6::WaylandCompositor}
-            \li \l{cmake-commands-qtwebenginecore}{Qt6::WebEngineCore}
-            \li \l{cmake-macros-qtwidgets}{Qt6::Widgets}
+            \li \l{cmake-commands-qtcore}{\tt Qt6::Core}
+            \li \l{cmake-commands-qtdbus}{\tt Qt6::DBus}
+            \li \l{cmake-commands-qtgrpc}{\tt Qt6::Grpc}
+            \li \l{cmake-commands-qtinterfaceframework}{\tt Qt6::InterfaceFramework}
+            \li \l{cmake-commands-qtlinguisttools}{\tt Qt6::LinguistTools}
+            \li \l{cmake-commands-qtmultimedia}{\tt Qt6::Multimedia}
+            \li \l{cmake-commands-qtprotobuf}{\tt Qt6::Protobuf}
+            \li \l{cmake-commands-qtqml}{\tt Qt6::Qml}
+            \li \l{cmake-macros-qtremoteobjects}{\tt Qt6::RemoteObjects}
+            \li \l{cmake-macros-qtscxml}{\tt Qt6::Scxml}
+            \li \l{cmake-commands-qtshadertools}{\tt Qt6::ShaderTools}
+            \li \l{cmake-commands-qtwaylandclient}{\tt Qt6::WaylandClient}
+            \li \l{cmake-commands-qtwaylandcompositor}{\tt Qt6::WaylandCompositor}
+            \li \l{cmake-commands-qtwebenginecore}{\tt Qt6::WebEngineCore}
+            \li \l{cmake-macros-qtwidgets}{\tt Qt6::Widgets}
         \endlist
         \li \l{CMake Variable Reference}
         \list
@@ -82,10 +82,10 @@
         \endlist
         \li \l{CMake Property Reference}
         \list
-            \li \l{cmake-properties-qtcore}{Qt6::Core}
-            \li \l{cmake-properties-qtdbus}{Qt6::DBus}
-            \li \l{cmake-properties-qtlinguisttools}{Qt6::LinguistTools}
-            \li \l{cmake-properties-qtqml}{Qt6::Qml}
+            \li \l{cmake-properties-qtcore}{\tt Qt6::Core}
+            \li \l{cmake-properties-qtdbus}{\tt Qt6::DBus}
+            \li \l{cmake-properties-qtlinguisttools}{\tt Qt6::LinguistTools}
+            \li \l{cmake-properties-qtqml}{\tt Qt6::Qml}
             \li \l{Standard CMake properties}
         \endlist
     \endlist
@@ -1005,7 +1005,7 @@
     before the first \c{find_package()} call to disable them.
 
     \note The imported Qt::Core target will not feature the target properties that are available
-    in the Qt6::Core target.
+    in the \c Qt6::Core target.
 
     \section2 Versionless commands
 
@@ -1207,19 +1207,19 @@
     These variables can influence CMake commands provided by Qt. They may be set
     by the project, a toolchain file or other third-party packages.
 
-    \section2 Qt6::Core
+    \section2 \tt Qt6::Core
 
     \annotatedlist cmake-variables-qtcore
 
-    \section2 Qt6::InterfaceFramework
+    \section2 \tt Qt6::InterfaceFramework
 
     \annotatedlist cmake-variables-qtinterfaceframework
 
-    \section2 Qt6::Multimedia
+    \section2 \tt Qt6::Multimedia
 
     \annotatedlist cmake-variables-qtmultimedia
 
-    \section2 Qt6::Qml
+    \section2 \tt Qt6::Qml
 
     \annotatedlist cmake-variables-qtqml
 
@@ -1238,7 +1238,7 @@
     \brief Provides a complete reference for CMake properties implemented in Qt.
     \previouspage CMake Variable Reference
 
-    \section1 Qt6::Core
+    \section1 \tt Qt6::Core
     \target cmake-properties-qtcore
 
     \section2 Target Properties
@@ -1253,14 +1253,14 @@
 
     \annotatedlist cmake-global-properties-qtcore
 
-    \section1 Qt6::DBus
+    \section1 \tt Qt6::DBus
     \target cmake-properties-qtdbus
 
     \section2 Source File Properties
 
     \annotatedlist cmake-source-file-properties-qtdbus
 
-    \section1 Qt6::LinguistTools
+    \section1 \tt Qt6::LinguistTools
     \target cmake-properties-qtlinguisttools
 
     \section2 Target Properties
@@ -1271,7 +1271,7 @@
 
     \annotatedlist cmake-directory-properties-qtlinguisttools
 
-    \section1 Qt6::Qml
+    \section1 \tt Qt6::Qml
     \target cmake-properties-qtqml
 
     \section2 Source File Properties
@@ -1294,77 +1294,77 @@
     \previouspage Qt 5 and Qt 6 compatibility
     \nextpage CMake Variable Reference
 
-    \section2 Qt6::Core
+    \section2 \tt Qt6::Core
     \target cmake-commands-qtcore
 
     \annotatedlist cmake-commands-qtcore
 
-    \section2 Qt6::DBus
+    \section2 \tt Qt6::DBus
     \target cmake-commands-qtdbus
 
     \annotatedlist cmake-commands-qtdbus
 
-    \section2 Qt6::Grpc
+    \section2 \tt Qt6::Grpc
     \target cmake-commands-qtgrpc
 
     \annotatedlist cmake-commands-qtgrpc
 
-    \section2 Qt6::InterfaceFramework
+    \section2 \tt Qt6::InterfaceFramework
     \target cmake-commands-qtinterfaceframework
 
     \annotatedlist cmake-commands-qtinterfaceframework
 
-    \section2 Qt6::LinguistTools
+    \section2 \tt Qt6::LinguistTools
     \target cmake-commands-qtlinguisttools
 
     \annotatedlist cmake-commands-qtlinguisttools
 
     \target cmake-commands-qtmultimedia
-    \section2 Qt6::Multimedia
+    \section2 \tt Qt6::Multimedia
 
     \annotatedlist cmake-commands-qtmultimedia
 
-    \section2 Qt6::Protobuf
+    \section2 \tt Qt6::Protobuf
     \target cmake-commands-qtprotobuf
 
     \annotatedlist cmake-commands-qtprotobuf
 
-    \section2 Qt6::Qml
+    \section2 \tt Qt6::Qml
     \target cmake-commands-qtqml
 
     \annotatedlist cmake-commands-qtqml
 
-    \section2 Qt6::RemoteObjects
+    \section2 \tt Qt6::RemoteObjects
     \target cmake-macros-qtremoteobjects
 
     \annotatedlist cmake-macros-qtremoteobjects
 
-    \section2 Qt6::Scxml
+    \section2 \tt Qt6::Scxml
     \target cmake-macros-qtscxml
 
     \annotatedlist cmake-macros-qtscxml
 
-    \section2 Qt6::ShaderTools
+    \section2 \tt Qt6::ShaderTools
     \target cmake-commands-qtshadertools
 
     \annotatedlist cmake-commands-qtshadertools
 
-    \section2 Qt6::WaylandClient
+    \section2 \tt Qt6::WaylandClient
     \target cmake-commands-qtwaylandclient
 
     \annotatedlist cmake-commands-qtwaylandclient
 
-    \section2 Qt6::WaylandCompositor
+    \section2 \tt Qt6::WaylandCompositor
     \target cmake-commands-qtwaylandcompositor
 
     \annotatedlist cmake-commands-qtwaylandcompositor
 
     \target cmake-commands-qtwebenginecore
-    \section2 Qt6::WebEngineCore
+    \section2 \tt Qt6::WebEngineCore
 
     \annotatedlist cmake-commands-qtwebenginecore
 
-    \section2 Qt6::Widgets
+    \section2 \tt Qt6::Widgets
     \target cmake-macros-qtwidgets
 
     \annotatedlist cmake-macros-qtwidgets
