@@ -234,7 +234,6 @@ combinations.
     \row \li NXP \li i.MX 8M Mini LPDDR4 EVK \li Yocto 5.1 \li \l{Boot to Qt} \li Qt Group
     \row \li NXP \li i.MX 8M Nano LPDDR4 EVK \li Yocto 5.1 \li \l{Boot to Qt} \li Qt Group
     \row \li NXP \li i.MX 8M Plus LPDDR4 EVK \li Yocto 5.1 \li \l{Boot to Qt} \li Qt Group
-    \row \li NXP \li i.MX 8MQuad EVK \li Yocto 5.1 \li \l{Boot to Qt} \li Qt Group
     \row \li Qualcomm \li Robotics RB5 Development Kit \li Yocto 5.0 \li \l{Boot to Qt} \li Qt Group
     \row \li ST \li STM32MP15 Evaluation \li Yocto 4.0 \li \l{Boot to Qt} \li Qt Group
     \row \li StarFive \li VisionFive 2 \li Yocto 5.1 \li \l{Boot to Qt} \li Qt Group
