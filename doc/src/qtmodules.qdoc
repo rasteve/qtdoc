@@ -105,10 +105,6 @@
             threading primitives.
         }
 
-        \griditem {qtdatavisualization-index.html}{Qt Data Visualization} {
-            UI Components for creating stunning 3D data visualizations.
-        }
-
         \griditem {qtgraphs-index.html}{Qt Graphs} {
             Provides functionality for visualizing data in 3D as bar, scatter, and
             surface graphs, as well as 2D in area, bar, donut, line, pie, scatter, and
